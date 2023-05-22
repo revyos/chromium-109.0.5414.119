@@ -1,0 +1,11 @@
+--- chromium-109.0.5414.119.orig/base/BUILD.gn
++++ chromium-109.0.5414.119/base/BUILD.gn
+@@ -2325,7 +2325,7 @@ mixed_component("base") {
+       ]
+     }
+ 
+-    if (current_cpu == "x64" || current_cpu == "arm64") {
++    if (current_cpu == "x64" || current_cpu == "arm64" || current_cpu == "riscv64") {
+       sources += [ "time/time_exploded_posix.cc" ]
+     } else {
+       sources += [ "time/time_exploded_ios.cc" ]

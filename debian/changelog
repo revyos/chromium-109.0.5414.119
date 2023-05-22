@@ -1,3 +1,10 @@
+chromium (109.0.5414.119-1+revyos1) unstable; urgency=medium
+
+  * init riscv patch and a little magic to build with clang-15 and gcc12
+    header
+
+ -- Xin Yang <yangxin@iscas.ac.cn>  Mon, 22 May 2023 22:45:44 +0800
+
 chromium (109.0.5414.119-1) unstable; urgency=high
 
   * New upstream security release.
