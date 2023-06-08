@@ -1,0 +1,19 @@
+--- a/third_party/vulkan-deps/vulkan-loader/src/loader/asm_offset.c
++++ b/third_party/vulkan-deps/vulkan-loader/src/loader/asm_offset.c
+@@ -32,14 +32,14 @@
+     __asm__("# VULKAN_LOADER_ERROR_BIT = %c0" : : "i"(VULKAN_LOADER_ERROR_BIT));
+     __asm__("# PTR_SIZE = %c0" : : "i"(sizeof(void *)));
+     __asm__("# CHAR_PTR_SIZE = %c0" : : "i"(sizeof(char *)));
+-    __asm__("# FUNCTION_OFFSET_INSTANCE = %c0" : : "i"(offsetof(struct loader_instance, phys_dev_ext_disp_functions)));
++    __asm__("# FUNCTION_OFFSET_INSTANCE = %0" : : "i"(offsetof(struct loader_instance, phys_dev_ext_disp_functions)));
+     __asm__("# PHYS_DEV_OFFSET_INST_DISPATCH = %c0" : : "i"(offsetof(struct loader_instance_dispatch_table, phys_dev_ext)));
+     __asm__("# PHYS_DEV_OFFSET_PHYS_DEV_TRAMP = %c0" : : "i"(offsetof(struct loader_physical_device_tramp, phys_dev)));
+     __asm__("# ICD_TERM_OFFSET_PHYS_DEV_TERM = %c0" : : "i"(offsetof(struct loader_physical_device_term, this_icd_term)));
+     __asm__("# PHYS_DEV_OFFSET_PHYS_DEV_TERM = %c0" : : "i"(offsetof(struct loader_physical_device_term, phys_dev)));
+     __asm__("# INSTANCE_OFFSET_ICD_TERM = %c0" : : "i"(offsetof(struct loader_icd_term, this_instance)));
+     __asm__("# DISPATCH_OFFSET_ICD_TERM = %c0" : : "i"(offsetof(struct loader_icd_term, phys_dev_ext)));
+-    __asm__("# EXT_OFFSET_DEVICE_DISPATCH = %c0" : : "i"(offsetof(struct loader_dev_dispatch_table, ext_dispatch)));
++    __asm__("# EXT_OFFSET_DEVICE_DISPATCH = %0" : : "i"(offsetof(struct loader_dev_dispatch_table, ext_dispatch)));
+ }
+ #elif defined(_WIN32)
+ // MSVC will print the name of the value and the value in hex

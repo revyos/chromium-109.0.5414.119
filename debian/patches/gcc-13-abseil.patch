@@ -1,0 +1,20 @@
+--- a/third_party/abseil-cpp/absl/strings/internal/damerau_levenshtein_distance.cc
++++ b/third_party/abseil-cpp/absl/strings/internal/damerau_levenshtein_distance.cc
+@@ -16,6 +16,7 @@
+ 
+ #include <algorithm>
+ #include <array>
++#include <cstdint>
+ #include <numeric>
+ 
+ #include "absl/strings/string_view.h"
+--- a/third_party/abseil-cpp/absl/strings/internal/damerau_levenshtein_distance.h
++++ b/third_party/abseil-cpp/absl/strings/internal/damerau_levenshtein_distance.h
+@@ -15,6 +15,7 @@
+ #ifndef ABSL_STRINGS_INTERNAL_DAMERAU_LEVENSHTEIN_DISTANCE_H_
+ #define ABSL_STRINGS_INTERNAL_DAMERAU_LEVENSHTEIN_DISTANCE_H_
+ 
++#include <cstdint>
+ #include <numeric>
+ #include <vector>
+ 

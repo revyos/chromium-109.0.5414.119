@@ -1,3 +1,10 @@
+chromium (109.0.5414.119-1revyos1) unstable; urgency=medium
+
+  [ Eric Long ]
+  * Build for riscv64
+
+ -- Han Gao <gaohan@iscas.ac.cn>  Wed, 07 Jun 2023 17:56:47 +0800
+
 chromium (109.0.5414.119-1) unstable; urgency=high
 
   * New upstream security release.
