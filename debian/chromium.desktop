@@ -128,7 +128,7 @@ Comment[vi]=Truy cập Internet
 Comment[zh_CN]=访问互联网
 Comment[zh_HK]=連線到網際網路
 Comment[zh_TW]=連線到網際網路
-Exec=/usr/bin/chromium %U
+Exec=/usr/bin/chromium --no-sandbox --use-gl=egl %U
 Terminal=false
 X-MultipleArgs=false
 Type=Application

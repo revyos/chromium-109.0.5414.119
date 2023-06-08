@@ -1,3 +1,9 @@
+chromium (109.0.5414.119-1revyos1+gles) unstable; urgency=medium
+
+  * Use --use-gl=egl for th1520
+
+ -- Han Gao <gaohan@iscas.ac.cn>  Fri, 09 Jun 2023 02:17:22 +0800
+
 chromium (109.0.5414.119-1revyos1) unstable; urgency=medium
 
   [ Eric Long ]
